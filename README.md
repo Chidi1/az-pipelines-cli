@@ -17,6 +17,14 @@ az devops configure --defaults organization="https://dev.azure.com/agromart/" pr
 az devops project create --name "CLI_Demo2" --visibility "public"
 
 ```
+List all projects within specified organisation:
+```bash
+az devops project list --organization "https://dev.azure.com/agromart/" -o table
+```
+Delete devops project: 
+```bash
+az devops project delete --organization "https://dev.azure.com/agromart/" --id <project id gotten from list projects command> --yes
+```
 List pipelines within specified organisation and project:
 ```bash
 az pipelines list -o table --org "https://dev.azure.com/agromart/" --project "AzureDevOps_Workshop"
