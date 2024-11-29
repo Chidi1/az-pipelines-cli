@@ -13,6 +13,9 @@ az login
 Setup the default organisation and project for the below commands (please change with your own parameters):
 ```bash
 az devops configure --defaults organization="https://dev.azure.com/agromart/" project="AzureDevOps_Workshop"
+
+az devops project create --name "CLI_Demo2" --visibility "public"
+
 ```
 List pipelines within specified organisation and project:
 ```bash
