@@ -12,11 +12,11 @@ az login
 ```
 Setup the default organisation and project for the below commands (please change with your own parameters):
 ```bash
-az devops configure --defaults organization="https://dev.azure.com/houssemdellai/" project="WebAppWithDatabaseDemo"
+az devops configure --defaults organization="https://dev.azure.com/agromart/" project="AzureDevOps_Workshop"
 ```
 List pipelines within specified organisation and project:
 ```bash
-az pipelines list -o table --org "https://dev.azure.com/houssemdellai/" --project "WebAppWithDatabaseDemo"
+az pipelines list -o table --org "https://dev.azure.com/agromart/" --project "AzureDevOps_Workshop"
 ```
 List pipelines from the default organisation and project:
 ```bash
@@ -28,7 +28,7 @@ az pipelines list -o table
 ```
 List variables from a specific pipeline (please change with your own parameter):
 ```bash
-az pipelines variable list --pipeline-name "CI-Pipeline-MultiJobs"
+az pipelines variable list --pipeline-name "azure-infra-devops-support-community.terraform-migration"
 ```
 List variable groups in JSON format:
 ```bash
