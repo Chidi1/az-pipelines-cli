@@ -13,7 +13,9 @@ az login
 Setup the default organisation and project for the below commands (please change with your own parameters):
 ```bash
 az devops configure --defaults organization="https://dev.azure.com/agromart/" project="AzureDevOps_Workshop"
-
+```
+Create a DevOps project:
+```bash
 az devops project create --name "CLI_Demo2" --visibility "public"
 
 ```
